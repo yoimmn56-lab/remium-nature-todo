@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium TODO - VisionOS Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Layer -->
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="date-badge" id="current-date">February 26, 2026</div>
+            <h1>Daily Focus</h1>
+            <p class="subtitle">効率的で清潔感のある一日を。</p>
+        </header>
+
+        <main class="todo-card">
+            <div class="input-container">
+                <input type="text" id="todo-input" placeholder="新しいタスクを入力..." autocomplete="off">
+                <button id="add-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="stats-bar">
+                <span id="task-count">0 tasks remaining</span>
+                <button id="clear-completed" class="text-btn">Clear completed</button>
+            </div>
+
+            <ul id="todo-list" class="todo-list">
+                <!-- Todos loaded here -->
+            </ul>
+        </main>
+
+        <div class="actions-footer">
+            <button id="export-md" class="secondary-btn">Markdown形式でコピー</button>
+        </div>
+
+        <footer>
+            Designed for <strong>Saori</strong> • Enjoy your productive day
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
