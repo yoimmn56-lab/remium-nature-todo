@@ -405,3 +405,85 @@ strong {
         transform: translateY(0) scale(1);
     }
 }
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .todo-card {
+        padding: 20px 16px;
+        border-radius: 32px;
+    }
+
+    .input-container {
+        padding: 4px 4px 4px 16px;
+        border-radius: 16px;
+    }
+
+    input[type="text"] {
+        font-size: 1rem;
+    }
+
+    #add-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+    }
+
+    .todo-item {
+        padding: 12px 0;
+        gap: 12px;
+    }
+
+    .checkbox-wrapper {
+        width: 28px;
+        height: 28px;
+    }
+
+    .checkmark {
+        width: 28px;
+        height: 28px;
+        border-radius: 10px;
+    }
+
+    .checkmark:after {
+        left: 10px;
+        top: 6px;
+    }
+
+    .todo-text {
+        font-size: 1rem;
+    }
+
+    .delete-btn {
+        opacity: 0.6;
+        /* Visible on mobile by default since no hover */
+        padding: 8px;
+    }
+
+    .secondary-btn {
+        width: 100%;
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    footer {
+        margin-top: 32px;
+        font-size: 0.8rem;
+    }
+}

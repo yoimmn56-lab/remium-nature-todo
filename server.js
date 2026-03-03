@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const port = 3000;
-const todoFilePath = path.join(__dirname, '..', 'todo.md');
+const todoFilePath = path.join(__dirname, 'todo.md');
 
 app.use(bodyParser.json());
 app.use(express.static('public'));
